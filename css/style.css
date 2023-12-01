@@ -1,0 +1,151 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+}
+
+.topnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: #ffffff7e;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 20px;
+  border: 3px solid rgb(92, 4, 88);
+  transition: all 0.3s ease;
+}
+
+.topnav a:hover {
+  background-color: #fff;
+  color: #121212;
+}
+
+.restofpage {
+  padding: 50px 20px;
+}
+
+.restofpage p {
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+.restofpage a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.restofpage a:hover {
+  text-decoration: underline;
+}
+
+.topnav a:hover::before {
+  background-color: rgb(252, 0, 0)
+}
+
+/* PC Info styles */
+.pc_info {
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pc_info h2 {
+  margin-bottom: 10px;
+}
+
+.pc_info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pc_info li {
+  margin-bottom: 8px;
+}
+
+/* Styling for YouTube channel */
+.youtube_channel {
+  text-align: center;
+  padding: 20px;
+}
+
+.youtube_channel h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.youtube_channel a {
+  text-decoration: none;
+  color: #a10d39; /* Change the color to suit your design */
+  transition: color 0.3s ease;
+}
+
+.youtube_channel a:hover {
+  color: #c01515; /* Change the hover color to complement the base color */
+}
+
+.youtube_channel hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
+
+/* Styling for active tab */
+.topnav a.active {
+  background-color: rgb(255, 255, 255);
+  color: #121212; /* Change the text color to ensure it's visible on the white background */
+}
+
+/* Styling for Twitch channel link */
+.twitch_channel {
+  text-align: center;
+  padding: 20px;
+}
+
+.twitch_channel h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.twitch_channel a {
+  text-decoration: none;
+  color: #6441a5; /* Twitch brand color */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.twitch_channel a:hover {
+  color: #9147ff; /* Lighter shade of Twitch brand color */
+}
+
+.twitch_channel hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
+
+/* Styling for rocket */
+.rocket {
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  background-color: #ffcc00;
+  opacity: 0;
+  transition: opacity 0.2s linear, transform 2s cubic-bezier(0.68, -0.55, 0.165, 100.55);
+}
